@@ -61,11 +61,10 @@ const translations = {
       scroll: 'Scroll'
     },
     stats: {
-      totalArea: 'TOTAL FLOOR AREA',
-      blocks: 'FACTORY BLOCKS',
-      power: 'POWER CAPACITY',
-      elevator: 'ELEVATOR CAPACITY',
-      load: 'GROUND FLOOR LOAD'
+      totalArea: 'TOTAL LEASING AREA (m²)',
+      blocks: 'IDENTICAL 2-STOREY WAREHOUSES',
+      power: 'kVA TOTAL POWER ACROSS 2 SUBSTATIONS',
+      elevator: 'TONS ELEVATOR LOAD'
     },
     intro: {
       eyebrow: 'DIRECT LEASING INQUIRY',
@@ -77,18 +76,17 @@ const translations = {
     },
     facility: {
       eyebrow: 'FACILITY OVERVIEW',
-      title: 'TWO PURPOSE-BUILT FACTORY BLOCKS',
-      sub: 'Flexible industrial space designed for modern manufacturing operations.',
+      title: 'TWO IDENTICAL TWO-STOREY WAREHOUSES',
+      sub: 'One consistent layout across both buildings.',
+      perBuilding: 'AREA PER BUILDING',
       factory: 'FACTORY',
       office: 'OFFICE'
     },
     interior: {
       eyebrow: 'FACTORY INTERIOR',
       title: 'ENGINEERED FOR PRODUCTION',
-      caption1: '7.9M GROUND FLOOR HEIGHT',
-      caption2: '6M SECOND FLOOR HEIGHT',
-      caption3: '3 TONS/m² GROUND FLOOR LOAD',
-      caption4: '1.5 TONS/m² SECOND FLOOR LOAD'
+      caption1: 'GROUND FLOOR | 7.9 M HEIGHT | 3 TONS/m² FLOOR LOAD',
+      caption2: 'SECOND FLOOR | 6 M HEIGHT | 1.5 TONS/m² FLOOR LOAD'
     },
     logistics: {
       eyebrow: 'LOGISTICS & MATERIAL HANDLING',
@@ -176,11 +174,10 @@ const translations = {
       scroll: 'Cuộn'
     },
     stats: {
-      totalArea: 'DIỆN TÍCH TỔNG',
-      blocks: 'KHỐI NHÀ MÁY',
-      power: 'CÔNG SUẤT ĐIỆN',
-      elevator: 'TẢI TRỌNG THANG MÁY',
-      load: 'TẢI TRỌNG TẦNG 1'
+      totalArea: 'DIỆN TÍCH CHO THUÊ (m²)',
+      blocks: 'NHÀ KHO 2 TẦNG GIỐNG NHAU',
+      power: 'TỔNG kVA QUA 2 TRẠM BIẾN ÁP',
+      elevator: 'TẢI TRỌNG THANG MÁY (TẤN)'
     },
     intro: {
       eyebrow: 'YÊU CẦU THUÊ TRỰC TIẾP',
@@ -192,18 +189,17 @@ const translations = {
     },
     facility: {
       eyebrow: 'TỔNG QUAN CƠ SỞ',
-      title: 'HAI KHỐI NHÀ MÁY ĐƯỢC XÂY DỰNG THEO MỤC ĐÍCH',
-      sub: 'Không gian công nghiệp linh hoạt cho hoạt động sản xuất hiện đại.',
+      title: 'HAI NHÀ KHO 2 TẦNG GIỐNG HỆT NHAU',
+      sub: 'Cả hai tòa nhà có cùng một bố cục và tiêu chuẩn.',
+      perBuilding: 'DIỆN TÍCH MỖI TÒA NHÀ',
       factory: 'NHÀ MÁY',
       office: 'VĂN PHÒNG'
     },
     interior: {
       eyebrow: 'NỘI THẤT NHÀ MÁY',
       title: 'THIẾT KẾ CHO SẢN XUẤT',
-      caption1: 'CHIỀU CAO TẦNG 1 7,9M',
-      caption2: 'CHIỀU CAO TẦNG 2 6M',
-      caption3: 'TẢI TRỌNG TẦNG 1 3 TONS/m²',
-      caption4: 'TẢI TRỌNG TẦNG 2 1,5 TONS/m²'
+      caption1: 'TẦNG 1 | CAO 7,9 M | TẢI TRỌNG SÀN 3 TẤN/m²',
+      caption2: 'TẦNG 2 | CAO 6 M | TẢI TRỌNG SÀN 1,5 TẤN/m²'
     },
     logistics: {
       eyebrow: 'VẬN HÀNH & VẬN CHUYỂN VẬT LIỆU',
@@ -308,11 +304,10 @@ const translations = {
       scroll: 'スクロール'
     },
     stats: {
-      totalArea: '総面積',
-      blocks: '工場棟数',
-      power: '電力容量',
-      elevator: 'エレベーター容量',
-      load: '1階耐荷重'
+      totalArea: '賃貸面積 (m²)',
+      blocks: '同一仕様の2階建て倉庫',
+      power: '2か所の変電所 合計 (kVA)',
+      elevator: 'エレベーター積載量 (トン)'
     },
     intro: {
       eyebrow: '直接賃貸問い合わせ',
@@ -324,18 +319,17 @@ const translations = {
     },
     facility: {
       eyebrow: '施設概要',
-      title: '2棟の目的別工場棟',
-      sub: '現代の製造業務に対応する柔軟な工業スペース。',
+      title: '同一仕様の2階建て倉庫が2棟',
+      sub: '2棟とも同じレイアウトと仕様です。',
+      perBuilding: '1棟あたりの面積',
       factory: '工場',
       office: '事務所'
     },
     interior: {
       eyebrow: '工場内装',
       title: '生産向け設計',
-      caption1: '1階高さ 7.9M',
-      caption2: '2階高さ 6M',
-      caption3: '1階耐荷重 3 TONS/m²',
-      caption4: '2階耐荷重 1.5 TONS/m²'
+      caption1: '1階 | 高さ 7.9 m | 床荷重 3 t/m²',
+      caption2: '2階 | 高さ 6 m | 床荷重 1.5 t/m²'
     },
     logistics: {
       eyebrow: '物流・搬送',
@@ -440,11 +434,10 @@ const translations = {
       scroll: '스크롤'
     },
     stats: {
-      totalArea: '총 면적',
-      blocks: '공장 블록',
-      power: '전력 용량',
-      elevator: '승강기 용량',
-      load: '1층 하중'
+      totalArea: '임대 면적 (m²)',
+      blocks: '동일한 2층 창고',
+      power: '2개 변전소 총 전력 (kVA)',
+      elevator: '승강기 적재 하중 (톤)'
     },
     intro: {
       eyebrow: '직접 임대 문의',
@@ -456,18 +449,17 @@ const translations = {
     },
     facility: {
       eyebrow: '시설 개요',
-      title: '목적별로 설계된 2개 공장 블록',
-      sub: '현대 제조 운영에 적합한 유연한 산업 공간입니다.',
+      title: '동일한 2층 창고 건물 2동',
+      sub: '두 건물은 동일한 설계와 사양을 갖추고 있습니다.',
+      perBuilding: '건물당 면적',
       factory: '공장',
       office: '사무실'
     },
     interior: {
       eyebrow: '공장 내부',
       title: '생산용 설계',
-      caption1: '1층 높이 7.9M',
-      caption2: '2층 높이 6M',
-      caption3: '1층 하중 3 TONS/m²',
-      caption4: '2층 하중 1.5 TONS/m²'
+      caption1: '1층 | 높이 7.9 m | 바닥 하중 3톤/m²',
+      caption2: '2층 | 높이 6 m | 바닥 하중 1.5톤/m²'
     },
     logistics: {
       eyebrow: '물류 및 자재 취급',
@@ -572,11 +564,10 @@ const translations = {
       scroll: '捲動'
     },
     stats: {
-      totalArea: '總面積',
-      blocks: '工廠棟數',
-      power: '電力容量',
-      elevator: '升降機容量',
-      load: '一樓承重'
+      totalArea: '出租面積 (m²)',
+      blocks: '兩棟相同的兩層倉庫',
+      power: '兩座變電站總電力 (kVA)',
+      elevator: '電梯載重 (噸)'
     },
     intro: {
       eyebrow: '直接租賃查詢',
@@ -588,18 +579,17 @@ const translations = {
     },
     facility: {
       eyebrow: '設施概覽',
-      title: '兩棟專用工廠大樓',
-      sub: '適合現代製造營運的靈活工業空間。',
+      title: '兩棟相同的兩層倉庫',
+      sub: '兩棟建築採用相同的設計與規格。',
+      perBuilding: '每棟建築面積',
       factory: '工廠',
       office: '辦公室'
     },
     interior: {
       eyebrow: '工廠內部',
       title: '為生產而設計',
-      caption1: '一樓高度 7.9M',
-      caption2: '二樓高度 6M',
-      caption3: '一樓承重 3 TONS/m²',
-      caption4: '二樓承重 1.5 TONS/m²'
+      caption1: '一樓 | 高度 7.9 m | 樓板載重 3 噸/m²',
+      caption2: '二樓 | 高度 6 m | 樓板載重 1.5 噸/m²'
     },
     logistics: {
       eyebrow: '物流與物料搬運',
@@ -691,7 +681,7 @@ const galleryButtons = document.querySelectorAll('.gallery-item');
 const inquiryForm = document.getElementById('inquiry-form');
 const metaDescription = document.querySelector('meta[name="description"]');
 const ogDescription = document.querySelector('meta[property="og:description"]');
-const langButtons = document.querySelectorAll('.lang');
+const languageSelect = document.querySelector('.lang');
 const localizedElements = document.querySelectorAll('[data-i18n]');
 const localizedPlaceholders = document.querySelectorAll('[data-i18n-placeholder]');
 
@@ -819,15 +809,11 @@ const applyLanguage = (locale) => {
     }
   });
 
-  langButtons.forEach((button) => {
-    button.classList.toggle('active', button.dataset.lang === locale);
-  });
+  languageSelect.value = locale;
 };
 
-langButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    applyLanguage(button.dataset.lang);
-  });
+languageSelect.addEventListener('change', () => {
+  applyLanguage(languageSelect.value);
 });
 
 window.addEventListener('scroll', updateHeaderState, { passive: true });

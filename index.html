@@ -14,7 +14,7 @@
       content="Newly built industrial facility with 15,260 m² total floor area, 4,000 KVA power capacity, and flexible two-block configuration in Bac Ninh, Vietnam."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="1/Enscape_2021-08-28-10-50-04.jpg" />
+    <meta property="og:image" content="Media/4.JPG" />
     <link rel="canonical" href="https://example.com/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,10 +28,9 @@
     <header class="site-header">
       <div class="container nav-wrap">
         <a href="#top" class="brand" aria-label="Thuan Thanh Factory home">
-          <span class="brand-mark">CTG</span>
           <span class="brand-text">
-            <strong>THUAN THANH</strong>
-            <small data-i18n="brand.sub">Factory Complex</small>
+            <strong>Nguyen Dat</strong>
+            <small>Invest</small>
           </span>
         </a>
 
@@ -45,13 +44,16 @@
         </nav>
 
         <div class="nav-actions">
-          <div class="lang-switcher" aria-label="Select language">
-            <button type="button" class="lang active" data-lang="en" aria-label="English">EN</button>
-            <button type="button" class="lang" data-lang="vi" aria-label="Vietnamese">VI</button>
-            <button type="button" class="lang" data-lang="ja" aria-label="Japanese">JA</button>
-            <button type="button" class="lang" data-lang="ko" aria-label="Korean">KO</button>
-            <button type="button" class="lang" data-lang="zh" aria-label="Traditional Chinese">ZH</button>
-          </div>
+          <label class="lang-switcher">
+            <span class="visually-hidden">Select language</span>
+            <select class="lang" aria-label="Select language">
+              <option value="en">🇬🇧 English</option>
+              <option value="vi">🇻🇳 Tiếng Việt</option>
+              <option value="ja">🇯🇵 日本語</option>
+              <option value="ko">🇰🇷 한국어</option>
+              <option value="zh">🇨🇳 繁體中文</option>
+            </select>
+          </label>
           <a class="btn btn-primary nav-cta" href="#contact" data-i18n="nav.requestDetails">REQUEST DETAILS</a>
         </div>
       </div>
@@ -77,35 +79,25 @@
             <a class="btn btn-secondary" href="#facility" data-i18n="hero.view">VIEW FACILITY</a>
           </div>
         </div>
-        <div class="scroll-indicator" aria-hidden="true">
-          <span data-i18n="hero.scroll">Scroll</span>
-          <span class="mouse">
-            <span class="wheel"></span>
-          </span>
-        </div>
       </section>
 
       <section class="stats" aria-label="Property statistics">
         <div class="container stats-grid">
           <article class="stat reveal">
             <span class="stat-number" data-counter="15260">0</span>
-            <span class="stat-label" data-i18n="stats.totalArea">TOTAL FLOOR AREA</span>
+            <span class="stat-label" data-i18n="stats.totalArea">TOTAL LEASING AREA (m²)</span>
           </article>
           <article class="stat reveal">
             <span class="stat-number" data-counter="2">0</span>
-            <span class="stat-label" data-i18n="stats.blocks">FACTORY BLOCKS</span>
+            <span class="stat-label" data-i18n="stats.blocks">IDENTICAL 2-STOREY WAREHOUSES</span>
           </article>
           <article class="stat reveal">
             <span class="stat-number" data-counter="4000">0</span>
-            <span class="stat-label" data-i18n="stats.power">POWER CAPACITY</span>
+            <span class="stat-label" data-i18n="stats.power">kVA TOTAL POWER ACROSS 2 SUBSTATIONS</span>
           </article>
           <article class="stat reveal">
             <span class="stat-number" data-counter="5">0</span>
-            <span class="stat-label" data-i18n="stats.elevator">ELEVATOR CAPACITY</span>
-          </article>
-          <article class="stat reveal">
-            <span class="stat-number" data-counter="3">0</span>
-            <span class="stat-label" data-i18n="stats.load">GROUND FLOOR LOAD</span>
+            <span class="stat-label" data-i18n="stats.elevator">TONS ELEVATOR LOAD</span>
           </article>
         </div>
       </section>
@@ -113,7 +105,6 @@
       <section class="section intro" id="about">
         <div class="container intro-grid">
           <div class="section-copy reveal">
-            <div class="eyebrow eyebrow-dark" data-i18n="intro.eyebrow">DIRECT LEASING INQUIRY</div>
             <h2 data-i18n="intro.title">PRIME LOCATION IN THUAN THANH II INDUSTRIAL PARK</h2>
             <p data-i18n="intro.paragraph1">Lot CN 42.1, Thuan Thanh II Industrial Park, Bac Ninh, Vietnam.</p>
             <p data-i18n="intro.paragraph2">
@@ -145,33 +136,38 @@
         <div class="container">
           <div class="section-heading reveal">
             <div class="eyebrow eyebrow-dark" data-i18n="facility.eyebrow">FACILITY OVERVIEW</div>
-            <h2 data-i18n="facility.title">TWO PURPOSE-BUILT FACTORY BLOCKS</h2>
-            <p data-i18n="facility.sub">Flexible industrial space designed for modern manufacturing operations.</p>
+            <h2 data-i18n="facility.title">TWO IDENTICAL TWO-STOREY WAREHOUSES</h2>
+            <p data-i18n="facility.sub">One consistent layout across both buildings.</p>
           </div>
 
-          <div class="block-grid">
-            <article class="facility-card reveal">
-              <div class="facility-image" style="background-image: url('1/Enscape_2021-08-28-10-58-49.jpg');"></div>
-              <div class="facility-body">
-                <div class="card-kicker">BLOCK 01</div>
-                <ul>
-                  <li><strong>6,980 m²</strong> <span data-i18n="facility.factory">FACTORY</span></li>
-                  <li><strong>650 m²</strong> <span data-i18n="facility.office">OFFICE</span></li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="facility-card reveal">
-              <div class="facility-image" style="background-image: url('1/Enscape_2021-08-28-10-57-37.jpg');"></div>
-              <div class="facility-body">
-                <div class="card-kicker">BLOCK 02</div>
-                <ul>
-                  <li><strong>6,980 m²</strong> <span data-i18n="facility.factory">FACTORY</span></li>
-                  <li><strong>650 m²</strong> <span data-i18n="facility.office">OFFICE</span></li>
-                </ul>
-              </div>
-            </article>
+          <div class="facility-overview reveal">
+            <figure class="facility-visual">
+              <img src="Media/3.JPG" alt="Exterior view of the two warehouse buildings" loading="lazy" />
+            </figure>
+            <div class="facility-details">
+              <div class="facility-per-building" data-i18n="facility.perBuilding">AREA PER BUILDING</div>
+              <dl class="facility-specs">
+                <div>
+                  <dt data-i18n="facility.factory">FACTORY</dt>
+                  <dd>6,980 m²</dd>
+                </div>
+                <div>
+                  <dt data-i18n="facility.office">OFFICE</dt>
+                  <dd>650 m²</dd>
+                </div>
+              </dl>
+            </div>
           </div>
+          <figure class="facility-film reveal">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/cleoQbHww4Q"
+              title="Industrial park and warehouse video overview"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </figure>
         </div>
       </section>
 
@@ -183,20 +179,12 @@
           </div>
           <div class="interior-grid">
             <figure class="interior-card reveal">
-              <img src="1/Enscape_2021-08-28-10-32-01.jpg" alt="Factory interior view" loading="lazy" />
-              <figcaption data-i18n="interior.caption1">7.9M GROUND FLOOR HEIGHT</figcaption>
+              <img src="Media/7.JPG" alt="Factory interior view" loading="lazy" />
+              <figcaption data-i18n="interior.caption1">GROUND FLOOR | 7.9 M HEIGHT | 3 TONS/m² FLOOR LOAD</figcaption>
             </figure>
             <figure class="interior-card reveal">
-              <img src="1/Enscape_2021-08-28-10-34-51.jpg" alt="Second floor factory interior" loading="lazy" />
-              <figcaption data-i18n="interior.caption2">6M SECOND FLOOR HEIGHT</figcaption>
-            </figure>
-            <figure class="interior-card reveal">
-              <img src="1/Enscape_2021-08-28-10-41-37.jpg" alt="Factory floor load detail" loading="lazy" />
-              <figcaption data-i18n="interior.caption3">3 TONS/m² GROUND FLOOR LOAD</figcaption>
-            </figure>
-            <figure class="interior-card reveal">
-              <img src="1/Enscape_2021-08-28-10-47-40.jpg" alt="Second floor load capacity" loading="lazy" />
-              <figcaption data-i18n="interior.caption4">1.5 TONS/m² SECOND FLOOR LOAD</figcaption>
+              <img src="Media/8.JPG" alt="Second floor factory interior" loading="lazy" />
+              <figcaption data-i18n="interior.caption2">SECOND FLOOR | 6 M HEIGHT | 1.5 TONS/m² FLOOR LOAD</figcaption>
             </figure>
           </div>
         </div>
