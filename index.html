@@ -315,7 +315,7 @@
         </div>
       </section>
 
-      <section class="section inquiry" id="contact">
+      <section class="section inquiry" id="inquiry">
         <div class="container inquiry-grid">
           <div class="contact-panel reveal">
             <div class="eyebrow eyebrow-dark" data-i18n="contact.eyebrow">DIRECT INQUIRY</div>
@@ -338,7 +338,10 @@
             </div>
           </div>
 
-          <form class="inquiry-form reveal" id="inquiry-form" novalidate>
+          <form class="inquiry-form reveal" id="inquiry-form" action="https://formsubmit.co/ajax/info@thuantanhfactory.vn" method="POST" accept-charset="UTF-8" novalidate>
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_subject" value="Factory Inquiry Request" />
+            <input type="hidden" name="_template" value="table" />
             <div class="field-grid">
               <label>
                 <span data-i18n="form.company">Company Name</span>

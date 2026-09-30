@@ -838,22 +838,54 @@ langButtons.forEach((button) => {
 });
 
 if (inquiryForm) {
-  inquiryForm.addEventListener('submit', (event) => {
+  inquiryForm.addEventListener('submit', async (event) => {
     event.preventDefault();
 
+    const submitButton = inquiryForm.querySelector('button[type="submit"]');
+    const originalText = submitButton.textContent;
+    submitButton.disabled = true;
+    submitButton.textContent = 'SENDING...';
+
     const formData = new FormData(inquiryForm);
-    const entries = Array.from(formData.entries());
-    const payload = entries
-      .filter(([, value]) => value !== '')
-      .map(([key, value]) => `${key}: ${value}`)
-      .join('\n');
+    const payload = Object.fromEntries(formData.entries());
+    payload._subject = 'Factory Inquiry Request';
+    payload._captcha = 'false';
+    payload._template = 'table';
 
-    const subject = encodeURIComponent('Factory Inquiry Request');
-    const body = encodeURIComponent(payload || 'Requesting more information about the factory complex.');
-    const emailAddress = property.emailPlaceholder;
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${property.emailPlaceholder}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
 
-    window.location.href = `mailto:${emailAddress}?subject=${subject}&body=${body}`;
-    inquiryForm.reset();
+      if (!response.ok) {
+        throw new Error('FormSubmit failed');
+      }
+
+      inquiryForm.reset();
+      submitButton.textContent = 'REQUEST SENT';
+      setTimeout(() => {
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
+      }, 2200);
+    } catch (error) {
+      const subject = encodeURIComponent('Factory Inquiry Request');
+      const body = encodeURIComponent(
+        Object.entries(payload)
+          .filter(([key]) => !['_subject', '_captcha', '_template'].includes(key))
+          .map(([key, value]) => `${key}: ${value}`)
+          .join('\n') || 'Requesting more information about the factory complex.'
+      );
+
+      window.location.href = `mailto:${property.emailPlaceholder}?subject=${subject}&body=${body}`;
+      inquiryForm.reset();
+      submitButton.textContent = originalText;
+      submitButton.disabled = false;
+    }
   });
 }
 
