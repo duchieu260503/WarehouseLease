@@ -302,7 +302,7 @@ p {
 }
 
 .hero-backdrop {
-  background-image: url("Media/4.JPG");
+  background-image: url("Media/4.webp");
   background-size: cover;
   background-position: center center;
   transform: scale(1.06);
