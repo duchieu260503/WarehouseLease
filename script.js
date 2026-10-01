@@ -92,17 +92,16 @@ const translations = {
       eyebrow: 'LOGISTICS & MATERIAL HANDLING',
       title: 'BUILT FOR INDUSTRIAL OPERATIONS',
       item1: '5-TON INDUSTRIAL ELEVATOR',
-      item2: 'OVERSIZED MATERIAL ACCESS',
-      item2Sub: 'Designed for efficient industrial movement and production flow.'
+      item2: '2ND FLOOR OVERSIZED MATERIAL ACCESS',
+      item3: 'AUTOMATIC FIRE EXTINGUISHER SYSTEM'
     },
     support: {
       eyebrow: 'OFFICE & SUPPORT FACILITIES',
       title: 'DEDICATED OFFICE & FACTORY FACILITIES',
-      item1: 'Separate restrooms for office and factory areas',
-      item2: 'Worker parking',
-      item3: 'Waste storage facility',
-      item4: 'Wastewater treatment facility',
-      item5: 'Capacity for up to 1,100 workers'
+      item1: 'Separate restrooms',
+      item2: 'Office space',
+      item3: 'Waste storage',
+      item4: 'Wastewater treatment'
     },
     gallery: {
       eyebrow: 'PHOTOGRAPHIC VIEW',
@@ -205,17 +204,16 @@ const translations = {
       eyebrow: 'VẬN HÀNH & VẬN CHUYỂN VẬT LIỆU',
       title: 'THIẾT KẾ CHO HOẠT ĐỘNG CÔNG NGHIỆP',
       item1: 'THANG MÁY CÔNG NGHIỆP 5 TẤN',
-      item2: 'TRUY CẬP VẬT LIỆU CÓ KÍCH THƯỚC LỚN',
-      item2Sub: 'Thiết kế cho chuyển động vật liệu và dòng sản xuất hiệu quả.'
+      item2: 'TRUY CẬP VẬT LIỆU CÓ KÍCH THƯỚC LỚN TẦNG 2',
+      item3: 'HỆ THỐNG PHÒNG CHÁY TỰ ĐỘNG'
     },
     support: {
       eyebrow: 'CƠ SỞ VĂN PHÒNG & HỖ TRỢ',
       title: 'CƠ SỞ VĂN PHÒNG & NHÀ MÁY RIÊNG BIỆT',
-      item1: 'Phòng vệ sinh riêng cho khu văn phòng và khu nhà máy',
-      item2: 'Bãi đỗ xe công nhân',
-      item3: 'Khu lưu trữ chất thải',
-      item4: 'Hệ thống xử lý nước thải',
-      item5: 'Dung lượng lên đến 1,100 công nhân'
+      item1: 'Phòng vệ sinh riêng',
+      item2: 'Không gian văn phòng',
+      item3: 'Lưu trữ chất thải',
+      item4: 'Xử lý nước thải'
     },
     power: {
       eyebrow: 'ĐIỆN & HẠ TẦNG',
@@ -335,17 +333,16 @@ const translations = {
       eyebrow: '物流・搬送',
       title: '工業運用に適した設計',
       item1: '5トン工業用エレベーター',
-      item2: '大型資材アクセス',
-      item2Sub: '効率的な搬送と生産フローを支える設計。'
+      item2: '2階大型資材アクセス',
+      item3: '自動消火設備システム'
     },
     support: {
       eyebrow: '事務所・支援設備',
       title: '専用オフィスと工場設備',
-      item1: '事務所と工場用の別設備休憩室',
-      item2: '作業員駐車場',
-      item3: '廃棄物保管施設',
-      item4: '排水処理施設',
-      item5: '最大1,100名の作業員対応'
+      item1: '別設備の休憩室',
+      item2: 'オフィススペース',
+      item3: '廃棄物保管',
+      item4: '排水処理'
     },
     power: {
       eyebrow: '電力・インフラ',
@@ -465,17 +462,16 @@ const translations = {
       eyebrow: '물류 및 자재 취급',
       title: '산업 운영에 최적화된 설계',
       item1: '5톤 산업용 승강기',
-      item2: '대형 자재 접근',
-      item2Sub: '효율적인 자재 이동과 생산 흐름을 지원합니다.'
+      item2: '2층 대형 자재 접근',
+      item3: '자동 소화기 시스템'
     },
     support: {
       eyebrow: '사무실 및 지원 시설',
       title: '전용 사무실 및 공장 시설',
-      item1: '사무실 및 공장 구역별 별도 화장실',
-      item2: '근로자 주차장',
-      item3: '폐기물 보관 시설',
-      item4: '폐수 처리 시설',
-      item5: '최대 1,100명 근로자 수용 가능'
+      item1: '별도 화장실',
+      item2: '사무실 공간',
+      item3: '폐기물 보관',
+      item4: '폐수 처리'
     },
     power: {
       eyebrow: '전력 및 인프라',
@@ -595,17 +591,16 @@ const translations = {
       eyebrow: '物流與物料搬運',
       title: '為工業營運而打造',
       item1: '5噸工業升降機',
-      item2: '大型物料通道',
-      item2Sub: '旨在提升效率的工業物流與生產流程設計。'
+      item2: '二樓大型物料通道',
+      item3: '自動消防設備系統'
     },
     support: {
       eyebrow: '辦公室與支援設施',
       title: '專用辦公室與工廠設施',
-      item1: '辦公區與工廠區分開衛生間',
-      item2: '員工停車場',
-      item3: '廢棄物儲存設施',
-      item4: '廢水處理設施',
-      item5: '可容納最多 1,100 名員工'
+      item1: '分開衛生間',
+      item2: '辦公室空間',
+      item3: '廢棄物儲存',
+      item4: '廢水處理'
     },
     power: {
       eyebrow: '電力與基礎設施',
@@ -678,6 +673,10 @@ const lightbox = document.getElementById('lightbox');
 const lightboxImage = lightbox.querySelector('img');
 const lightboxClose = document.querySelector('.lightbox-close');
 const galleryButtons = document.querySelectorAll('.gallery-item');
+const galleryTabs = document.querySelectorAll('.gallery-tab');
+const galleryPanels = document.querySelectorAll('.gallery-panel');
+const brochureSelect = document.querySelector('.brochure-lang');
+const brochureButton = document.querySelector('.brochure-btn');
 const inquiryForm = document.getElementById('inquiry-form');
 const metaDescription = document.querySelector('meta[name="description"]');
 const ogDescription = document.querySelector('meta[property="og:description"]');
@@ -759,6 +758,32 @@ const closeLightbox = () => {
 galleryButtons.forEach((button) => {
   button.addEventListener('click', () => {
     openLightbox(button.dataset.image);
+  });
+});
+
+if (brochureSelect && brochureButton) {
+  brochureSelect.addEventListener('change', () => {
+    brochureButton.href = 'Quang cao CTG.pdf';
+    brochureButton.removeAttribute('download');
+    brochureButton.setAttribute('target', '_blank');
+    brochureButton.setAttribute('rel', 'noreferrer');
+  });
+}
+
+galleryTabs.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    const selectedTab = tab.dataset.tab;
+
+    galleryTabs.forEach((item) => {
+      const isActive = item === tab;
+      item.classList.toggle('active', isActive);
+      item.setAttribute('aria-selected', String(isActive));
+    });
+
+    galleryPanels.forEach((panel) => {
+      const isActive = panel.id === `tab-${selectedTab}`;
+      panel.classList.toggle('active', isActive);
+    });
   });
 });
 
