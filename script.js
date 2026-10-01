@@ -858,7 +858,7 @@ galleryButtons.forEach((button) => {
 
 if (brochureSelect && brochureButton) {
   brochureSelect.addEventListener('change', () => {
-    brochureButton.href = 'Quang cao CTG.pdf';
+    brochureButton.href = 'Báo giá cho thuê nhà xưởng.pdf';
     brochureButton.removeAttribute('download');
     brochureButton.setAttribute('target', '_blank');
     brochureButton.setAttribute('rel', 'noreferrer');
