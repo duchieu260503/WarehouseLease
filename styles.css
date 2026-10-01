@@ -696,7 +696,7 @@ p {
 }
 
 .feature-visual {
-  min-height: 150px;
+  min-height: 220px;
   background-size: cover;
   background-position: center;
   border: 1px solid rgba(17,22,26,0.08);
@@ -1079,6 +1079,11 @@ p {
   color: #f5efe6;
 }
 
+.contact-email {
+  color: rgba(255,255,255,0.86);
+  font-size: 0.82rem;
+}
+
 .contact-banner-actions {
   display: flex;
   flex-wrap: wrap;
@@ -1340,6 +1345,10 @@ p {
   .gallery-item.large {
     grid-column: auto;
     min-height: 360px;
+  }
+
+  .feature-stack {
+    grid-template-columns: 1fr;
   }
 
   .feature-item {

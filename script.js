@@ -42,7 +42,7 @@ const translations = {
     },
     brand: { sub: 'Factory Complex' },
     nav: {
-      about: 'About',
+      about: 'Home',
       facility: 'Facility',
       location: 'Location',
       specifications: 'Specifications',
@@ -72,7 +72,10 @@ const translations = {
       paragraph1: 'Lot CN 42.1, Thuan Thanh II Industrial Park, Bac Ninh, Vietnam.',
       paragraph2: 'Strategically positioned for manufacturing and industrial operations, with modern infrastructure and a disciplined production-oriented layout.',
       map: 'VIEW LOCATION ON MAP',
-      mapAria: 'Map location of Thuan Thanh II industrial park in Bac Ninh'
+      mapAria: 'Map location of Thuan Thanh II industrial park in Bac Ninh',
+      mapLot: 'Lot CN 42.1',
+      mapPark: 'Thuan Thanh II Industrial Park',
+      mapCity: 'Bac Ninh, Vietnam'
     },
     facility: {
       eyebrow: 'FACILITY OVERVIEW',
@@ -105,17 +108,27 @@ const translations = {
     },
     gallery: {
       eyebrow: 'PHOTOGRAPHIC VIEW',
-      title: 'PROPERTY GALLERY'
+      title: 'PROPERTY GALLERY',
+      tabFlycam: 'Fly Cam',
+      tabWarehouse: 'Warehouse Interior',
+      tabLogistics: 'Warehouse Exterior',
+      tabSupport: 'Fire Extinguishers'
     },
     tech: {
       eyebrow: 'TECHNICAL INFORMATION',
       title: 'FACTORY FLOOR AREA & TECHNICAL SPECIFICATIONS',
       spec1Label: 'Factory floor area',
+      spec1Value: '6,980 m² per block',
       spec2Label: 'Office area',
+      spec2Value: '650 m² per block',
       spec3Label: 'Floor heights',
+      spec3Value: '7.9 m ground floor / 6 m second floor',
       spec4Label: 'Floor load capacity',
+      spec4Value: '3 tons/m² ground / 1.5 tons/m² second',
       spec5Label: 'Elevator capacity',
+      spec5Value: '5 tons',
       spec6Label: 'Power capacity',
+      spec6Value: '4,000 KVA',
       download: 'DOWNLOAD FULL PROPERTY BROCHURE'
     },
     contact: {
@@ -143,115 +156,134 @@ const translations = {
     },
     footer: {
       tagline: 'Factory Leasing | Direct Inquiry',
-      phoneLabel: 'Phone:'
+      phoneLabel: 'Phone:',
+      quickAccess: 'Quick access',
+      location: 'Location',
+      facility: 'Facility',
+      operations: 'Operations',
+      inquiry: 'Inquiry',
+      directInquiry: 'Direct inquiry'
     }
   },
   vi: {
     meta: {
       title: 'Nhà xưởng cho thuê tại Bắc Ninh | Khu công nghiệp Thuận Thành II',
-      description: 'Nhà xưởng mới xây 15,260 m² cho thuê tại Khu công nghiệp Thuận Thành II, Bắc Ninh, Việt Nam. Công suất điện 4,000 KVA, hạ tầng công nghiệp hiện đại và yêu cầu thuê trực tiếp.',
-      ogDescription: 'Cơ sở công nghiệp mới xây với diện tích 15,260 m², công suất điện 4,000 KVA và cấu hình hai khối linh hoạt tại Bắc Ninh, Việt Nam.'
+      description: 'Cho thuê nhà xưởng mới xây tại Khu công nghiệp Thuận Thành II, Bắc Ninh. Tổng diện tích 15.260 m², công suất điện 4.000 kVA, hạ tầng đồng bộ. Liên hệ trực tiếp để nhận thông tin chi tiết.',
+      ogDescription: 'Nhà xưởng mới xây tại Bắc Ninh với tổng diện tích 15.260 m², công suất điện 4.000 kVA và hai khối nhà xưởng có thiết kế đồng bộ.'
     },
     brand: { sub: 'Cụm nhà máy' },
     nav: {
-      about: 'Giới thiệu',
-      facility: 'Cơ sở',
+      about: 'Trang chủ',
+      facility: 'Nhà xưởng',
       location: 'Vị trí',
-      specifications: 'Thông số',
-      gallery: 'Thư viện',
+      specifications: 'Thông số kỹ thuật',
+      gallery: 'Hình ảnh',
       contact: 'Liên hệ',
-      requestDetails: 'YÊU CẦU THÔNG TIN'
+      requestDetails: 'NHẬN THÔNG TIN'
     },
     hero: {
-      eyebrow: 'CỤM NHÀ MÁY MỚI XÂY CHO THUÊ',
-      title: 'NHÀ MÁY CHO THUÊ',
+      eyebrow: 'NHÀ XƯỞNG MỚI XÂY, SẴN SÀNG CHO THUÊ',
+      title: 'CHO THUÊ NHÀ XƯỞNG',
       subtitle: 'KHU CÔNG NGHIỆP THUẬN THÀNH II\nBẮC NINH, VIỆT NAM',
-      meta: 'DIỆN TÍCH TỔNG 15,260 m²',
-      blurb: 'Không gian sản xuất và công nghiệp cao cấp dành cho doanh nghiệp cần vị trí chiến lược, hạ tầng hiện đại và năng lực sản xuất linh hoạt.',
-      request: 'YÊU CẦU THÔNG TIN',
-      view: 'XEM CƠ SỞ',
-      scroll: 'Cuộn'
+      meta: 'TỔNG DIỆN TÍCH CHO THUÊ 15.260 m²',
+      blurb: 'Không gian sản xuất hiện đại tại vị trí thuận lợi, với hạ tầng đồng bộ và diện tích linh hoạt cho nhiều nhu cầu vận hành.',
+      request: 'NHẬN THÔNG TIN NHÀ XƯỞNG',
+      view: 'XEM NHÀ XƯỞNG',
+      scroll: 'Cuộn xuống'
     },
     stats: {
       totalArea: 'DIỆN TÍCH CHO THUÊ (m²)',
-      blocks: 'NHÀ KHO 2 TẦNG GIỐNG NHAU',
-      power: 'TỔNG kVA QUA 2 TRẠM BIẾN ÁP',
+      blocks: 'NHÀ XƯỞNG 2 TẦNG, THIẾT KẾ GIỐNG NHAU',
+      power: 'TỔNG CÔNG SUẤT 2 TRẠM BIẾN ÁP (kVA)',
       elevator: 'TẢI TRỌNG THANG MÁY (TẤN)'
     },
     intro: {
-      eyebrow: 'YÊU CẦU THUÊ TRỰC TIẾP',
-      title: 'VỊ TRÍ ĐẶC LỢI TẠI KHU CÔNG NGHIỆP THUẬN THÀNH II',
-      paragraph1: 'Lot CN 42.1, Khu công nghiệp Thuận Thành II, Bắc Ninh, Việt Nam.',
-      paragraph2: 'Vị trí thuận lợi cho hoạt động sản xuất và công nghiệp với hạ tầng hiện đại và bố trí theo hướng sản xuất chuyên nghiệp.',
+      eyebrow: 'CHO THUÊ TRỰC TIẾP',
+      title: 'VỊ TRÍ THUẬN LỢI TẠI KHU CÔNG NGHIỆP THUẬN THÀNH II',
+      paragraph1: 'Lô CN 42.1, Khu công nghiệp Thuận Thành II, Bắc Ninh, Việt Nam.',
+      paragraph2: 'Nằm trong khu công nghiệp có hạ tầng đồng bộ, phù hợp cho doanh nghiệp sản xuất và các hoạt động công nghiệp.',
       map: 'XEM VỊ TRÍ TRÊN BẢN ĐỒ',
-      mapAria: 'Vị trí bản đồ của khu công nghiệp Thuận Thành II tại Bắc Ninh'
+      mapAria: 'Bản đồ vị trí Khu công nghiệp Thuận Thành II, Bắc Ninh',
+      mapLot: 'Lô CN 42.1',
+      mapPark: 'Khu công nghiệp Thuận Thành II',
+      mapCity: 'Bắc Ninh, Việt Nam'
     },
     facility: {
       eyebrow: 'TỔNG QUAN CƠ SỞ',
-      title: 'HAI NHÀ KHO 2 TẦNG GIỐNG HỆT NHAU',
-      sub: 'Cả hai tòa nhà có cùng một bố cục và tiêu chuẩn.',
-      perBuilding: 'DIỆN TÍCH MỖI TÒA NHÀ',
-      factory: 'NHÀ MÁY',
-      office: 'VĂN PHÒNG'
+      title: 'HAI NHÀ XƯỞNG 2 TẦNG CÓ THIẾT KẾ GIỐNG NHAU',
+      sub: 'Mỗi nhà xưởng đều có khu sản xuất và khu văn phòng.',
+      perBuilding: 'THÔNG TIN MỖI NHÀ XƯỞNG',
+      factory: 'KHU NHÀ XƯỞNG',
+      office: 'KHU VĂN PHÒNG'
     },
     interior: {
-      eyebrow: 'NỘI THẤT NHÀ MÁY',
-      title: 'THIẾT KẾ CHO SẢN XUẤT',
-      caption1: 'TẦNG 1 | CAO 7,9 M | TẢI TRỌNG SÀN 3 TẤN/m²',
-      caption2: 'TẦNG 2 | CAO 6 M | TẢI TRỌNG SÀN 1,5 TẤN/m²'
+      eyebrow: 'KHÔNG GIAN BÊN TRONG',
+      title: 'THIẾT KẾ ĐÁP ỨNG NHU CẦU SẢN XUẤT',
+      caption1: 'TẦNG 1 | CAO 7,9 M | TẢI TRỌNG SÀN: 3 TẤN/m²',
+      caption2: 'TẦNG 2 | CAO 6 M | TẢI TRỌNG SÀN: 1,5 TẤN/m²'
     },
     logistics: {
-      eyebrow: 'VẬN HÀNH & VẬN CHUYỂN VẬT LIỆU',
-      title: 'THIẾT KẾ CHO HOẠT ĐỘNG CÔNG NGHIỆP',
-      item1: 'THANG MÁY CÔNG NGHIỆP 5 TẤN',
-      item2: 'TRUY CẬP VẬT LIỆU CÓ KÍCH THƯỚC LỚN TẦNG 2',
-      item3: 'HỆ THỐNG PHÒNG CHÁY TỰ ĐỘNG'
+      eyebrow: 'VẬN CHUYỂN VÀ XỬ LÝ HÀNG HÓA',
+      title: 'HẠ TẦNG PHỤC VỤ VẬN HÀNH',
+      item1: 'THANG MÁY TẢI TRỌNG 5 TẤN',
+      item2: 'LỐI VẬN CHUYỂN HÀNG HÓA LÊN TẦNG 2',
+      item3: 'HỆ THỐNG CHỮA CHÁY TỰ ĐỘNG'
     },
     support: {
-      eyebrow: 'CƠ SỞ VĂN PHÒNG & HỖ TRỢ',
-      title: 'CƠ SỞ VĂN PHÒNG & NHÀ MÁY RIÊNG BIỆT',
-      item1: 'Phòng vệ sinh riêng',
-      item2: 'Không gian văn phòng',
-      item3: 'Lưu trữ chất thải',
-      item4: 'Xử lý nước thải'
+      eyebrow: 'VĂN PHÒNG VÀ TIỆN ÍCH',
+      title: 'KHU VĂN PHÒNG VÀ CÁC HẠNG MỤC PHỤ TRỢ',
+      item1: 'Khu vệ sinh riêng cho văn phòng và nhà xưởng',
+      item2: 'Khu vực đỗ xe cho công nhân',
+      item3: 'Khu nhà rác',
+      item4: 'Hệ thống xử lý nước thải'
     },
     power: {
       eyebrow: 'ĐIỆN & HẠ TẦNG',
-      title: 'ĐIỆN & HẠ TẦNG',
-      total: 'TỔNG CÔNG SUẤT',
-      transformers: 'BIẾN ÁP',
-      fireLabel: 'CHỐNG CHÁY TỰ ĐỘNG',
-      fireSmall: 'HỆ THỐNG',
+      title: 'HỆ THỐNG ĐIỆN VÀ HẠ TẦNG',
+      total: 'TỔNG CÔNG SUẤT ĐIỆN',
+      transformers: 'TRẠM BIẾN ÁP',
+      fireLabel: 'PHÒNG CHÁY CHỮA CHÁY',
+      fireSmall: 'HỆ THỐNG TỰ ĐỘNG',
       wastewaterLabel: 'XỬ LÝ NƯỚC THẢI',
       wastewaterSmall: 'HỆ THỐNG'
     },
     gallery: {
-      eyebrow: 'GÓC NHÌN HÌNH ẢNH',
-      title: 'THƯ VIỆN CƠ SỞ'
+      eyebrow: 'HÌNH ẢNH THỰC TẾ',
+      title: 'HÌNH ẢNH NHÀ XƯỞNG',
+      tabFlycam: 'Video flycam',
+      tabWarehouse: 'Bên trong nhà xưởng',
+      tabLogistics: 'Mặt ngoài nhà xưởng',
+      tabSupport: 'Bình chữa cháy'
     },
     tech: {
       eyebrow: 'THÔNG TIN KỸ THUẬT',
-      title: 'DIỆN TÍCH SÀN NHÀ MÁY & THÔNG SỐ KỸ THUẬT',
-      spec1Label: 'Diện tích sàn nhà máy',
+      title: 'DIỆN TÍCH VÀ THÔNG SỐ KỸ THUẬT NHÀ XƯỞNG',
+      spec1Label: 'Diện tích nhà xưởng',
+      spec1Value: '6.980 m²/nhà xưởng',
       spec2Label: 'Diện tích văn phòng',
+      spec2Value: '650 m²/nhà xưởng',
       spec3Label: 'Chiều cao tầng',
+      spec3Value: 'Tầng 1: 7,9 m | Tầng 2: 6 m',
       spec4Label: 'Tải trọng sàn',
-      spec5Label: 'Dung lượng thang máy',
+      spec4Value: 'Tầng 1: 3 tấn/m² | Tầng 2: 1,5 tấn/m²',
+      spec5Label: 'Tải trọng thang máy',
+      spec5Value: '5 tấn',
       spec6Label: 'Công suất điện',
-      download: 'TẢI BẢN MÔ TẢ CƠ SỞ ĐẦY ĐỦ'
+      spec6Value: '4.000 kVA (2 trạm biến áp)',
+      download: 'TẢI HỒ SƠ GIỚI THIỆU NHÀ XƯỞNG'
     },
     lease: {
       eyebrow: 'ĐIỀU KIỆN THUÊ',
       title: 'ĐIỀU KIỆN THUÊ',
       factoryLabel: 'Nhà máy',
       officeLabel: 'Văn phòng',
-      note: 'Liên hệ để biết thông tin khả dụng, điều kiện cho thuê và thăm quan trực tiếp.'
+      note: 'Liên hệ để kiểm tra tình trạng nhà xưởng, trao đổi điều kiện thuê hoặc đặt lịch tham quan.'
     },
     contact: {
       eyebrow: 'LIÊN HỆ TRỰC TIẾP',
-      title: 'BẠN ĐANG TÌM CƠ SỞ SẢN XUẤT TIẾP THEO?',
-      description: 'Nói chuyện trực tiếp với đại diện để sắp xếp thăm quan hoặc yêu cầu thông số kỹ thuật đầy đủ.',
-      manager: 'ÔNG CUỐNG',
+      title: 'ĐANG TÌM NHÀ XƯỞNG CHO HOẠT ĐỘNG SẢN XUẤT?',
+      description: 'Liên hệ trực tiếp với đại diện của chúng tôi để đặt lịch tham quan hoặc nhận hồ sơ thông số kỹ thuật.',
+      manager: 'ANH CƯỜNG',
       phone: 'Điện thoại',
       whatsapp: 'WhatsApp',
       zalo: 'Zalo',
@@ -263,111 +295,130 @@ const translations = {
       country: 'Quốc gia',
       email: 'Email',
       phone: 'Điện thoại',
-      area: 'Diện tích nhà máy cần thuê',
+      area: 'Diện tích nhà xưởng cần thuê',
       areaPlaceholder: 'vd: 5,000 m²',
-      date: 'Ngày dự kiến chuyển vào',
+      date: 'Thời gian dự kiến bắt đầu thuê',
       message: 'Tin nhắn',
-      messagePlaceholder: 'Hãy cho chúng tôi biết nhu cầu sản xuất của bạn.',
-      submit: 'YÊU CẦU THĂM QUAN'
+      messagePlaceholder: 'Hãy chia sẻ nhu cầu sử dụng nhà xưởng của doanh nghiệp.',
+      submit: 'ĐẶT LỊCH THAM QUAN'
     },
     footer: {
-      tagline: 'Cho thuê nhà máy | Liên hệ trực tiếp',
-      phoneLabel: 'Điện thoại:'
+      tagline: 'Cho thuê nhà xưởng | Liên hệ trực tiếp',
+      phoneLabel: 'Điện thoại:',
+      quickAccess: 'Liên kết nhanh',
+      location: 'Vị trí',
+      facility: 'Nhà xưởng',
+      operations: 'Vận hành',
+      inquiry: 'Liên hệ thuê',
+      directInquiry: 'Liên hệ trực tiếp'
     }
   },
   ja: {
     meta: {
-      title: 'バクニン工場賃貸 | Thuận Thành II 工業団地',
-      description: 'ベトナム・バクニンの Thuận Thành II 工業団地にある新築 15,260 m² の工場複合施設を賃貸。4,000 KVA の電力容量、モダンな工業インフラ、直接問い合わせに対応。',
-      ogDescription: 'ベトナム・バクニンにある 15,260 m² の新築工業施設。4,000 KVA の電力容量と2棟構成の柔軟な生産スペース。'
+      title: 'バクニン省の工場賃貸 | Thuận Thành II 工業団地',
+      description: 'ベトナム・バクニン省 Thuận Thành II 工業団地の新築工場を賃貸。総賃貸面積15,260 m²、受電容量4,000 kVA。詳細はお気軽にお問い合わせください。',
+      ogDescription: 'バクニン省の新築工場。総賃貸面積15,260 m²、受電容量4,000 kVA、同一仕様の工場棟2棟を備えています。'
     },
     brand: { sub: '工場複合施設' },
     nav: {
-      about: '概要',
-      facility: '施設',
-      location: '立地',
-      specifications: '仕様',
+      about: 'ホーム',
+      facility: '工場概要',
+      location: '所在地',
+      specifications: '技術仕様',
       gallery: 'ギャラリー',
       contact: 'お問い合わせ',
-      requestDetails: '詳細を依頼'
+      requestDetails: '資料を請求'
     },
     hero: {
-      eyebrow: '新築工場複合施設の賃貸',
-      title: '工場複合施設 賃貸',
+      eyebrow: '新築工場・賃貸物件',
+      title: '工場を賃貸',
       subtitle: 'Thuận Thành II 工業団地\nバクニン、ベトナム',
-      meta: '総面積 15,260 m²',
-      blurb: '戦略的な立地、モダンなインフラ、柔軟な生産能力を備えた高品質な製造・工業スペースです。',
-      request: '物件詳細を依頼',
-      view: '施設を見る',
-      scroll: 'スクロール'
+      meta: '総賃貸面積 15,260 m²',
+      blurb: '整ったインフラと柔軟なスペースを備えた、製造業に適した工場です。事業規模や用途に応じてご検討いただけます。',
+      request: '工場資料を請求',
+      view: '工場を見る',
+      scroll: '下へスクロール'
     },
     stats: {
       totalArea: '賃貸面積 (m²)',
-      blocks: '同一仕様の2階建て倉庫',
-      power: '2か所の変電所 合計 (kVA)',
-      elevator: 'エレベーター積載量 (トン)'
+      blocks: '同一仕様の2階建て工場棟',
+      power: '変電所2か所 合計 (kVA)',
+      elevator: 'エレベーター積載荷重 (トン)'
     },
     intro: {
-      eyebrow: '直接賃貸問い合わせ',
-      title: 'Thuận Thành II 工業団地の好立地',
-      paragraph1: 'Lot CN 42.1, Thuận Thành II 工業団地, バクニン, ベトナム。',
-      paragraph2: '製造・工業活動に適した立地と、近代的なインフラを備えた生産志向の施設です。',
-      map: '地図で確認',
-      mapAria: 'バクニンの Thuận Thành II 工業団地の地図位置'
+      eyebrow: 'オーナー直接募集',
+      title: 'Thuận Thành II 工業団地内の便利な立地',
+      paragraph1: 'ベトナム・バクニン省 Thuận Thành II 工業団地 CN 42.1区画。',
+      paragraph2: '工業インフラが整った団地内に位置し、製造業をはじめとする幅広い事業用途に対応します。',
+      map: '地図で場所を確認',
+      mapAria: 'バクニン省 Thuận Thành II 工業団地の所在地図',
+      mapLot: 'CN 42.1区画',
+      mapPark: 'Thuận Thành II 工業団地',
+      mapCity: 'ベトナム・バクニン省'
     },
     facility: {
       eyebrow: '施設概要',
-      title: '同一仕様の2階建て倉庫が2棟',
-      sub: '2棟とも同じレイアウトと仕様です。',
+      title: '同一仕様の2階建て工場棟が2棟',
+      sub: '2棟とも同じ設計で、工場と事務所を備えています。',
       perBuilding: '1棟あたりの面積',
       factory: '工場',
       office: '事務所'
     },
     interior: {
-      eyebrow: '工場内装',
-      title: '生産向け設計',
+      eyebrow: '工場内観',
+      title: '生産現場に配慮した設計',
       caption1: '1階 | 高さ 7.9 m | 床荷重 3 t/m²',
       caption2: '2階 | 高さ 6 m | 床荷重 1.5 t/m²'
     },
     logistics: {
-      eyebrow: '物流・搬送',
-      title: '工業運用に適した設計',
-      item1: '5トン工業用エレベーター',
-      item2: '2階大型資材アクセス',
-      item3: '自動消火設備システム'
+      eyebrow: '物流・荷役設備',
+      title: '日々の工場運営を支える設備',
+      item1: '積載荷重5トンの貨物用エレベーター',
+      item2: '2階への大型資材搬入に対応',
+      item3: '自動消火設備'
     },
     support: {
-      eyebrow: '事務所・支援設備',
-      title: '専用オフィスと工場設備',
-      item1: '別設備の休憩室',
-      item2: 'オフィススペース',
-      item3: '廃棄物保管',
-      item4: '排水処理'
+      eyebrow: '事務所・付帯設備',
+      title: '事務所と工場を支える付帯設備',
+      item1: '事務所と工場それぞれにトイレを設置',
+      item2: '事務所スペース',
+      item3: '廃棄物保管場所',
+      item4: '排水処理設備'
     },
     power: {
       eyebrow: '電力・インフラ',
-      title: '電力・インフラ',
+      title: '電力・インフラ設備',
       total: '総電力容量',
       transformers: '変圧器',
-      fireLabel: '自動火災防護',
-      fireSmall: 'システム',
+      fireLabel: '自動消火設備',
+      fireSmall: '設置済み',
       wastewaterLabel: '排水処理',
       wastewaterSmall: '施設'
     },
     gallery: {
-      eyebrow: '写真ビュー',
-      title: '物件ギャラリー'
+      eyebrow: '現地写真・動画',
+      title: '工場のご紹介',
+      tabFlycam: '空撮動画',
+      tabWarehouse: '工場内観',
+      tabLogistics: '工場外観',
+      tabSupport: '消火器'
     },
     tech: {
       eyebrow: '技術情報',
-      title: '工場床面積と技術仕様',
-      spec1Label: '工場床面積',
+      title: '工場面積・設備仕様',
+      spec1Label: '工場面積',
+      spec1Value: '6,980 m²/棟',
       spec2Label: '事務所面積',
+      spec2Value: '650 m²/棟',
       spec3Label: '階高',
+      spec3Value: '1階: 7.9 m | 2階: 6 m',
       spec4Label: '床耐荷重',
-      spec5Label: 'エレベーター容量',
+      spec4Value: '1階: 3 t/m² | 2階: 1.5 t/m²',
+      spec5Label: 'エレベーター積載荷重',
+      spec5Value: '5トン',
       spec6Label: '電力容量',
-      download: '物件の総合案内をダウンロード'
+      spec6Value: '4,000 kVA (変電所2か所)',
+      download: '工場案内資料をダウンロード'
     },
     lease: {
       eyebrow: '賃貸条件',
@@ -378,8 +429,8 @@ const translations = {
     },
     contact: {
       eyebrow: '直接問い合わせ',
-      title: '次の生産拠点をお探しですか？',
-      description: '現地見学や詳細仕様のご要望は、担当者へ直接ご連絡ください。',
+      title: '新たな生産拠点をお探しですか？',
+      description: '現地見学のご予約や詳しい仕様資料のご希望は、担当者までお気軽にご連絡ください。',
       manager: 'クオン氏',
       phone: '電話',
       whatsapp: 'WhatsApp',
@@ -394,109 +445,128 @@ const translations = {
       phone: '電話番号',
       area: '希望工場面積',
       areaPlaceholder: '例: 5,000 m²',
-      date: '入居予定日',
+      date: '賃貸開始希望時期',
       message: 'メッセージ',
       messagePlaceholder: '生産要件をご記入ください。',
-      submit: '現地見学を依頼'
+      submit: '現地見学を予約'
     },
     footer: {
       tagline: '工場賃貸 | 直接お問い合わせ',
-      phoneLabel: '電話:'
+      phoneLabel: '電話:',
+      quickAccess: 'メニュー',
+      location: '所在地',
+      facility: '工場概要',
+      operations: '設備',
+      inquiry: 'お問い合わせ',
+      directInquiry: 'お問い合わせ'
     }
   },
   ko: {
     meta: {
-      title: '바크닌 공장 임대 | Thuận Thành II 산업단지',
-      description: '베트남 바크닌 Thuận Thành II 산업단지의 신축 15,260 m² 공장 복합단지 임대. 4,000 KVA 전력 용량, 현대적 산업 인프라와 직접 임대 문의 지원.',
-      ogDescription: '베트남 바크닌에 위치한 15,260 m² 신축 산업 시설. 4,000 KVA 전력 용량과 유연한 2개 블록 구성.'
+      title: '베트남 박닌 공장 임대 | 투언타인 II 산업단지',
+      description: '베트남 박닌성 투언타인 II 산업단지의 신축 공장을 임대합니다. 총 임대 면적 15,260 m², 수전 용량 4,000 kVA. 자세한 내용은 문의해 주세요.',
+      ogDescription: '박닌성의 신축 공장 임대. 총 임대 면적 15,260 m², 수전 용량 4,000 kVA, 동일한 설계의 2층 공장 2개 동.'
     },
     brand: { sub: '공장 단지' },
     nav: {
-      about: '소개',
-      facility: '시설',
-      location: '위치',
-      specifications: '사양',
+      about: '홈',
+      facility: '공장 안내',
+      location: '위치 안내',
+      specifications: '기술 사양',
       gallery: '갤러리',
       contact: '연락처',
-      requestDetails: '상세 요청'
+      requestDetails: '자료 문의'
     },
     hero: {
-      eyebrow: '신축 공장 복합 단지 임대',
-      title: '공장 복합 단지 임대',
-      subtitle: 'Thuận Thành II 산업단지\n바크닌, 베트남',
-      meta: '총 면적 15,260 m²',
-      blurb: '전략적 위치, 현대적 인프라, 유연한 생산 능력을 갖춘 프리미엄 제조 및 산업 공간입니다.',
-      request: '입지 정보 요청',
-      view: '시설 보기',
-      scroll: '스크롤'
+      eyebrow: '신축 공장 임대',
+      title: '공장 임대 안내',
+      subtitle: '투언타인 II 산업단지\n베트남 박닌성',
+      meta: '총 임대 면적 15,260 m²',
+      blurb: '산업 인프라가 잘 갖춰진 공장으로, 다양한 제조업 운영에 적합한 공간과 유연한 활용성을 제공합니다.',
+      request: '공장 자료 문의',
+      view: '공장 둘러보기',
+      scroll: '아래로 스크롤'
     },
     stats: {
       totalArea: '임대 면적 (m²)',
-      blocks: '동일한 2층 창고',
+      blocks: '동일한 설계의 2층 공장',
       power: '2개 변전소 총 전력 (kVA)',
-      elevator: '승강기 적재 하중 (톤)'
+      elevator: '승강기 적재 용량 (톤)'
     },
     intro: {
-      eyebrow: '직접 임대 문의',
-      title: 'Thuận Thành II 산업단지의 우수한 입지',
-      paragraph1: 'Lot CN 42.1, Thuận Thành II 산업단지, 바크닌, 베트남.',
-      paragraph2: '제조 및 산업 운영에 적합한 전략적 위치와 현대적 인프라를 갖춘 생산 중심 시설입니다.',
-      map: '지도에서 위치 보기',
-      mapAria: '바크닌 Thuận Thành II 산업단지 위치 지도'
+      eyebrow: '임대 문의',
+      title: '투언타인 II 산업단지 내 편리한 입지',
+      paragraph1: '베트남 박닌성 투언타인 II 산업단지 CN 42.1 부지',
+      paragraph2: '산업 인프라가 잘 갖춰진 단지에 위치해 제조업을 비롯한 다양한 산업 운영에 적합합니다.',
+      map: '지도에서 위치 확인',
+      mapAria: '베트남 박닌성 투언타인 II 산업단지 위치 지도',
+      mapLot: 'CN 42.1 부지',
+      mapPark: '투언타인 II 산업단지',
+      mapCity: '베트남 박닌성'
     },
     facility: {
       eyebrow: '시설 개요',
-      title: '동일한 2층 창고 건물 2동',
-      sub: '두 건물은 동일한 설계와 사양을 갖추고 있습니다.',
-      perBuilding: '건물당 면적',
-      factory: '공장',
-      office: '사무실'
+      title: '동일한 설계의 2층 공장 2개 동',
+      sub: '두 동 모두 같은 설계로 공장과 사무 공간을 갖추고 있습니다.',
+      perBuilding: '공장 1개 동 기준 면적',
+      factory: '공장 공간',
+      office: '사무 공간'
     },
     interior: {
       eyebrow: '공장 내부',
-      title: '생산용 설계',
-      caption1: '1층 | 높이 7.9 m | 바닥 하중 3톤/m²',
-      caption2: '2층 | 높이 6 m | 바닥 하중 1.5톤/m²'
+      title: '생산 운영에 맞춘 설계',
+      caption1: '1층 | 층고 7.9 m | 바닥 하중 3톤/m²',
+      caption2: '2층 | 층고 6 m | 바닥 하중 1.5톤/m²'
     },
     logistics: {
-      eyebrow: '물류 및 자재 취급',
-      title: '산업 운영에 최적화된 설계',
-      item1: '5톤 산업용 승강기',
-      item2: '2층 대형 자재 접근',
-      item3: '자동 소화기 시스템'
+      eyebrow: '물류 및 자재 운반',
+      title: '원활한 공장 운영을 위한 설비',
+      item1: '적재 용량 5톤 화물용 승강기',
+      item2: '2층 대형 자재 반입 가능',
+      item3: '자동 소화 설비'
     },
     support: {
-      eyebrow: '사무실 및 지원 시설',
-      title: '전용 사무실 및 공장 시설',
-      item1: '별도 화장실',
-      item2: '사무실 공간',
-      item3: '폐기물 보관',
-      item4: '폐수 처리'
+      eyebrow: '사무 및 부대시설',
+      title: '사무 공간과 공장 운영 지원 시설',
+      item1: '사무실·공장 구역별 화장실',
+      item2: '사무 공간',
+      item3: '폐기물 보관 공간',
+      item4: '폐수 처리 시설'
     },
     power: {
       eyebrow: '전력 및 인프라',
-      title: '전력 및 인프라',
+      title: '전력 및 기반 시설',
       total: '총 전력 용량',
       transformers: '변압기',
-      fireLabel: '자동 소방 보호',
-      fireSmall: '시스템',
+      fireLabel: '자동 소화 설비',
+      fireSmall: '설치 완료',
       wastewaterLabel: '폐수 처리',
       wastewaterSmall: '시설'
     },
     gallery: {
-      eyebrow: '사진 뷰',
-      title: '부동산 갤러리'
+      eyebrow: '현장 사진 및 영상',
+      title: '공장 둘러보기',
+      tabFlycam: '항공 촬영 영상',
+      tabWarehouse: '공장 내부',
+      tabLogistics: '공장 외관',
+      tabSupport: '소화기'
     },
     tech: {
       eyebrow: '기술 정보',
-      title: '공장 면적 및 기술 사양',
-      spec1Label: '공장 바닥 면적',
+      title: '공장 면적 및 주요 사양',
+      spec1Label: '공장 면적',
+      spec1Value: '6,980 m²/개 동',
       spec2Label: '사무실 면적',
+      spec2Value: '650 m²/개 동',
       spec3Label: '층고',
+      spec3Value: '1층: 7.9 m | 2층: 6 m',
       spec4Label: '바닥 하중',
-      spec5Label: '승강기 용량',
+      spec4Value: '1층: 3톤/m² | 2층: 1.5톤/m²',
+      spec5Label: '승강기 적재 용량',
+      spec5Value: '5톤',
       spec6Label: '전력 용량',
-      download: '전체 부동산 브로셔 다운로드'
+      spec6Value: '4,000 kVA (변전소 2개소)',
+      download: '공장 안내 자료 다운로드'
     },
     lease: {
       eyebrow: '임대 조건',
@@ -507,9 +577,9 @@ const translations = {
     },
     contact: {
       eyebrow: '직접 문의',
-      title: '다음 생산 시설을 찾고 계신가요?',
-      description: '현장 방문이나 전체 기술 사양 요청은 담당자에게 직접 문의해 주세요.',
-      manager: '쿠옹 대표',
+      title: '새로운 생산 거점을 찾고 계신가요?',
+      description: '현장 방문 예약이나 상세 사양 자료가 필요하시면 담당자에게 문의해 주세요.',
+      manager: '끄엉 담당자',
       phone: '전화',
       whatsapp: 'WhatsApp',
       zalo: 'Zalo',
@@ -523,109 +593,128 @@ const translations = {
       phone: '전화번호',
       area: '필요 공장 면적',
       areaPlaceholder: '예: 5,000 m²',
-      date: '입주 예정일',
+      date: '임대 시작 희망 시기',
       message: '메시지',
       messagePlaceholder: '생산 요구 사항을 알려주세요.',
-      submit: '현장 방문 요청'
+      submit: '현장 방문 예약'
     },
     footer: {
       tagline: '공장 임대 | 직접 문의',
-      phoneLabel: '전화:'
+      phoneLabel: '전화:',
+      quickAccess: '빠른 링크',
+      location: '위치 안내',
+      facility: '공장 안내',
+      operations: '설비',
+      inquiry: '임대 문의',
+      directInquiry: '직접 문의'
     }
   },
   zh: {
     meta: {
-      title: '北寧工廠租賃 | Thuận Thành II 工業園區',
-      description: '越南北寧 Thuận Thành II 工業園區新建 15,260 m² 工廠複合體租賃。4,000 KVA 電力容量、現代化工業基礎設施與直接租賃詢問。',
-      ogDescription: '位於越南北寧的 15,260 m² 新建工業設施，擁有 4,000 KVA 電力容量及靈活的雙棟配置。'
+      title: '越南北寧廠房出租 | Thuận Thành II 工業區',
+      description: '越南北寧 Thuận Thành II 工業區新建廠房出租，總出租面積 15,260 m²，供電容量 4,000 kVA。歡迎直接洽詢。',
+      ogDescription: '越南北寧新建廠房出租，總出租面積 15,260 m²，供電容量 4,000 kVA，包含兩棟相同規格的廠房。'
     },
     brand: { sub: '工廠複合體' },
     nav: {
-      about: '簡介',
-      facility: '設施',
-      location: '位置',
-      specifications: '規格',
-      gallery: '相冊',
+      about: '首頁',
+      facility: '廠房介紹',
+      location: '地點資訊',
+      specifications: '技術規格',
+      gallery: '影像導覽',
       contact: '聯絡',
-      requestDetails: '索取詳情'
+      requestDetails: '索取資料'
     },
     hero: {
-      eyebrow: '新建工廠複合體租賃',
-      title: '工廠複合體租賃',
+      eyebrow: '全新廠房出租',
+      title: '廠房出租',
       subtitle: 'Thuận Thành II 工業園區\n北寧、越南',
-      meta: '總面積 15,260 m²',
-      blurb: '適合尋求戰略位置、現代化基礎設施與靈活生產能力的企業的高端製造與工業空間。',
-      request: '索取物業詳情',
-      view: '查看設施',
-      scroll: '捲動'
+      meta: '總出租面積 15,260 m²',
+      blurb: '廠房位於交通便利、工業設施完善的園區，空間規劃靈活，適合各類製造業營運需求。',
+      request: '索取廠房資料',
+      view: '查看廠房',
+      scroll: '向下瀏覽'
     },
     stats: {
       totalArea: '出租面積 (m²)',
-      blocks: '兩棟相同的兩層倉庫',
+      blocks: '兩棟相同設計的兩層廠房',
       power: '兩座變電站總電力 (kVA)',
-      elevator: '電梯載重 (噸)'
+      elevator: '電梯載重能力 (噸)'
     },
     intro: {
-      eyebrow: '直接租賃查詢',
-      title: 'Thuận Thành II 工業園區的優越位置',
-      paragraph1: 'Lot CN 42.1, Thuận Thành II 工業園區，北寧，越南。',
-      paragraph2: '毗鄰製造與工業營運需求，具備現代化基礎設施與專業生產導向布局。',
-      map: '在地圖上查看位置',
-      mapAria: '北寧 Thuận Thành II 工業園區位置地圖'
+      eyebrow: '業主直接出租',
+      title: '位於 Thuận Thành II 工業區，交通便利',
+      paragraph1: '越南北寧 Thuận Thành II 工業區 CN 42.1 地段。',
+      paragraph2: '園區工業配套完善，適合製造業及其他工業用途。',
+      map: '查看地圖位置',
+      mapAria: '越南北寧 Thuận Thành II 工業區位置地圖',
+      mapLot: 'CN 42.1 地段',
+      mapPark: 'Thuận Thành II 工業區',
+      mapCity: '越南北寧'
     },
     facility: {
       eyebrow: '設施概覽',
-      title: '兩棟相同的兩層倉庫',
-      sub: '兩棟建築採用相同的設計與規格。',
-      perBuilding: '每棟建築面積',
-      factory: '工廠',
+      title: '兩棟相同設計的兩層廠房',
+      sub: '兩棟廠房規格一致，均設有生產空間及辦公室。',
+      perBuilding: '每棟廠房面積',
+      factory: '廠房空間',
       office: '辦公室'
     },
     interior: {
       eyebrow: '工廠內部',
-      title: '為生產而設計',
-      caption1: '一樓 | 高度 7.9 m | 樓板載重 3 噸/m²',
-      caption2: '二樓 | 高度 6 m | 樓板載重 1.5 噸/m²'
+      title: '配合生產需求的空間規劃',
+      caption1: '一樓 | 樓高 7.9 m | 樓板載重 3 噸/m²',
+      caption2: '二樓 | 樓高 6 m | 樓板載重 1.5 噸/m²'
     },
     logistics: {
-      eyebrow: '物流與物料搬運',
-      title: '為工業營運而打造',
-      item1: '5噸工業升降機',
-      item2: '二樓大型物料通道',
-      item3: '自動消防設備系統'
+      eyebrow: '物流與物料搬運設備',
+      title: '完善設備，支援日常營運',
+      item1: '載重 5 噸貨運升降機',
+      item2: '大型物料可運送至二樓',
+      item3: '自動滅火設備'
     },
     support: {
-      eyebrow: '辦公室與支援設施',
-      title: '專用辦公室與工廠設施',
-      item1: '分開衛生間',
-      item2: '辦公室空間',
-      item3: '廢棄物儲存',
-      item4: '廢水處理'
+      eyebrow: '辦公室與附屬設施',
+      title: '辦公空間及廠房配套設施',
+      item1: '辦公室及廠房分設洗手間',
+      item2: '辦公空間',
+      item3: '廢棄物存放區',
+      item4: '廢水處理設備'
     },
     power: {
       eyebrow: '電力與基礎設施',
-      title: '電力與基礎設施',
+      title: '電力及基礎設施',
       total: '總電力容量',
       transformers: '變壓器',
-      fireLabel: '自動消防保護',
-      fireSmall: '系統',
+      fireLabel: '自動滅火設備',
+      fireSmall: '已設置',
       wastewaterLabel: '廢水處理',
       wastewaterSmall: '設施'
     },
     gallery: {
-      eyebrow: '照片視圖',
-      title: '物業圖庫'
+      eyebrow: '現場照片與影片',
+      title: '廠房影像導覽',
+      tabFlycam: '空拍影片',
+      tabWarehouse: '廠房內部',
+      tabLogistics: '廠房外觀',
+      tabSupport: '滅火器'
     },
     tech: {
       eyebrow: '技術資訊',
-      title: '工廠樓面面積與技術規格',
-      spec1Label: '工廠樓面面積',
+      title: '廠房面積與設備規格',
+      spec1Label: '廠房面積',
+      spec1Value: '6,980 m²/棟',
       spec2Label: '辦公室面積',
+      spec2Value: '650 m²/棟',
       spec3Label: '樓層高度',
-      spec4Label: '樓板承重',
-      spec5Label: '升降機容量',
+      spec3Value: '一樓：7.9 m | 二樓：6 m',
+      spec4Label: '樓板載重',
+      spec4Value: '一樓：3 噸/m² | 二樓：1.5 噸/m²',
+      spec5Label: '升降機載重',
+      spec5Value: '5 噸',
       spec6Label: '電力容量',
-      download: '下載完整物業簡介'
+      spec6Value: '4,000 kVA（兩座變電站）',
+      download: '下載廠房介紹資料'
     },
     lease: {
       eyebrow: '租賃條款',
@@ -636,8 +725,8 @@ const translations = {
     },
     contact: {
       eyebrow: '直接詢問',
-      title: '正在尋找下一個生產基地？',
-      description: '請直接聯絡代表安排現場考察或索取完整技術規格。',
+      title: '正在為企業尋找新的生產據點嗎？',
+      description: '歡迎直接聯絡我們，預約現場參觀或索取詳細設備規格。',
       manager: 'CUONG 先生',
       phone: '電話',
       whatsapp: 'WhatsApp',
@@ -652,14 +741,20 @@ const translations = {
       phone: '電話',
       area: '所需工廠面積',
       areaPlaceholder: '例如：5,000 m²',
-      date: '預計搬入日期',
+      date: '預計起租時間',
       message: '訊息',
       messagePlaceholder: '請告訴我們您的生產需求。',
-      submit: '預約現場考察'
+      submit: '預約現場參觀'
     },
     footer: {
       tagline: '工廠租賃 | 直接詢問',
-      phoneLabel: '電話:'
+      phoneLabel: '電話：',
+      quickAccess: '快速連結',
+      location: '地點資訊',
+      facility: '廠房介紹',
+      operations: '設備',
+      inquiry: '租賃洽詢',
+      directInquiry: '直接聯絡'
     }
   }
 };
