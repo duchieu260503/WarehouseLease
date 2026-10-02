@@ -67,7 +67,7 @@ const translations = {
       elevator: 'TONS ELEVATOR LOAD'
     },
     intro: {
-      eyebrow: 'DIRECT LEASING INQUIRY',
+      eyebrow: 'DIRECT FROM OWNER | NO BROKER',
       title: 'PRIME LOCATION IN THUAN THANH II INDUSTRIAL PARK',
       paragraph1: 'Lot CN 42.1, Thuan Thanh II Industrial Park, Bac Ninh, Vietnam.',
       paragraph2: 'Strategically positioned for manufacturing and industrial operations, with modern infrastructure and a disciplined production-oriented layout.',
@@ -198,7 +198,7 @@ const translations = {
       elevator: 'TẢI TRỌNG THANG MÁY (TẤN)'
     },
     intro: {
-      eyebrow: 'CHO THUÊ TRỰC TIẾP',
+      eyebrow: 'CHÍNH CHỦ CHO THUÊ | KHÔNG QUA MÔI GIỚI',
       title: 'VỊ TRÍ THUẬN LỢI TẠI KHU CÔNG NGHIỆP THUẬN THÀNH II',
       paragraph1: 'Lô CN 42.1, Khu công nghiệp Thuận Thành II, Bắc Ninh, Việt Nam.',
       paragraph2: 'Nằm trong khu công nghiệp có hạ tầng đồng bộ, phù hợp cho doanh nghiệp sản xuất và các hoạt động công nghiệp.',
@@ -346,7 +346,7 @@ const translations = {
       elevator: 'エレベーター積載荷重 (トン)'
     },
     intro: {
-      eyebrow: 'オーナー直接募集',
+      eyebrow: 'オーナー直接賃貸 | 仲介なし',
       title: 'Thuận Thành II 工業団地内の便利な立地',
       paragraph1: 'ベトナム・バクニン省 Thuận Thành II 工業団地 CN 42.1区画。',
       paragraph2: '工業インフラが整った団地内に位置し、製造業をはじめとする幅広い事業用途に対応します。',
@@ -494,7 +494,7 @@ const translations = {
       elevator: '승강기 적재 용량 (톤)'
     },
     intro: {
-      eyebrow: '임대 문의',
+      eyebrow: '소유주 직접 임대 | 중개인 없음',
       title: '투언타인 II 산업단지 내 편리한 입지',
       paragraph1: '베트남 박닌성 투언타인 II 산업단지 CN 42.1 부지',
       paragraph2: '산업 인프라가 잘 갖춰진 단지에 위치해 제조업을 비롯한 다양한 산업 운영에 적합합니다.',
@@ -642,7 +642,7 @@ const translations = {
       elevator: '電梯載重能力 (噸)'
     },
     intro: {
-      eyebrow: '業主直接出租',
+      eyebrow: '業主直接出租 | 免仲介',
       title: '位於 Thuận Thành II 工業區，交通便利',
       paragraph1: '越南北寧 Thuận Thành II 工業區 CN 42.1 地段。',
       paragraph2: '園區工業配套完善，適合製造業及其他工業用途。',
